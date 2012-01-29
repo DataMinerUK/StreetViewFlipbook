@@ -55,7 +55,7 @@
 				var pics;
 				var $image = $('<img />').appendTo('body');
 				
-				$.get( (prefix != 'DEFAULT' ? prefix : "pics/1327859008/") + 'pics.json', function(data) {
+				$.get( (prefix != 'DEFAULT' ? prefix : "pics/default/") + 'pics.json', function(data) {
 					pics = data;
 					$image.attr("src", pics[0]);
 				});
